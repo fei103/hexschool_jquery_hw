@@ -1,0 +1,296 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*以上是css reset*/
+
+.wrap {
+	width: 1002px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.header1 {
+	background-color: #f6f6f6;
+	height: 28px;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items:center;
+}
+
+.header1 a {
+	text-decoration: none;
+}
+
+.header2 {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	height: 52px;
+}
+
+.header2 .logo h1 a {
+    float: left;
+    background-image: url(../images/logo.png);
+    width: 224px;
+    height: 50px;
+    display: block;
+    text-indent: 101%; 
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+.list {
+	height: 52px;
+}
+
+.menu {
+	float: right;
+	z-index:9999;
+	position: relative;
+}
+
+.menu .homepage {
+	text-decoration: none;
+	background-color: #FFF;
+	color: #00cc99;
+	display: block;
+    text-align: center;
+	transition: all .3s;
+	padding: 18px 0 15px 0;
+	border-bottom: 3px solid #00cc99;
+}
+
+.menu a {
+	text-decoration: none;
+	padding: 18px 0;
+	background-color: #FFF;
+	color: #00cc99;
+	display: block;
+    text-align: center;
+	transition: all .3s;
+}
+
+.menu a:hover, .listall.active{
+	padding: 18px 0 15px 0;
+	border-bottom: 3px solid #00cc99;
+}
+
+.menu > li {
+	float: left;
+	width: 100px;
+}
+
+.menu ul {
+	display: none;
+} 
+
+.menu > li:hover ul {
+    display: block;
+}
+
+.swiper {
+    width: 1002px;
+    height: 346px;
+	z-index: 1000;
+	position: relative;
+	margin-bottom: 66px;
+}
+
+.swiper-slide {
+	position: relative;
+}
+
+.text-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+	height: 160px;
+	width: 1000px;
+	position: absolute;
+	top: 94px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.swiper-slide .title {
+	position: absolute;
+	top: 135px;
+	left: 24px;
+	color: white;
+	font-size: 36px;
+}
+
+.three_item {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 66px;
+}
+
+.item {
+	width: 260px;
+	height: auto;
+	padding-bottom: 24px;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-shadow: 0px 5px 5px #dbdbdb;
+}
+
+.item  div {
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.item .title {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.item p {
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.table h1 {
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.table {
+	width:842px;
+	margin: auto;
+	margin-bottom: 64px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th {
+	text-align: left;
+	background-color: #f7f7f7;
+	font-weight: bold;
+}
+
+th, td {
+	border-top: solid 1px #dddddd;
+	border-bottom: solid 1px #dddddd;
+	padding: 12px;
+}
+
+.contact {
+	background-image: url(../images/bg_07.png);
+	width: 100%;
+	height: 405px;
+	background-repeat: repeat-x;
+	padding-top: 32px;
+}
+
+.contact h1 {
+    text-align: center;
+    color: white;
+	font-size: 24px;
+	line-height: 40px;
+	margin-bottom: 24px;
+}
+
+.contact-content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+textarea {
+	resize:none;
+	width:460px;
+	height:245px;
+	margin-bottom: 30px;
+}
+
+input {
+	margin-bottom: 16px;
+}
+
+label {
+	color: white;
+	font-weight: bold;
+}
+
+.submit {
+	color:white;
+	background-color: #00cc99;
+	border: none;
+	border-radius: 6%;
+	padding: 9px 22px;
+	float: right;
+	margin-bottom: 30px;
+}
+
+.footer {
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 40px;
+	padding-left: 20px;
+	margin-bottom: 55px;
+}
+
+.top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.top img {
+    width: 50px;
+    height: 50px;
+}
